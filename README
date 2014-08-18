@@ -2,7 +2,7 @@ Create combined tournament tables for little golem.
 
 Usage:
 > ls
-CMakeLists.txt  tournament.cpp
+CMakeLists.txt  README tournament.cpp
 > mkdir build && cd build
 build> CC=clang CXX=clang++ cmake .. -DHTMLCXX_PREFIX=$HOME && make
 [...]
