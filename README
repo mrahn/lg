@@ -1,5 +1,7 @@
 Create combined tournament tables for little golem.
 
+Requires http://sourceforge.net/projects/htmlcxx/
+
 Usage:
 > ls
 CMakeLists.txt  README tournament.cpp
