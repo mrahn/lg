@@ -146,6 +146,8 @@ try
 
   for (std::string const& player : players)
   {
+    sons[player] = 0;
+
     for (std::string const& other : won[player])
     {
       sons[player] += 2 * points.at (other);
@@ -177,7 +179,7 @@ try
     by_points[{points.at (player), games.at (player)}].push_back (player);
     by_ratios[ratio (points.at (player), games.at (player))]
       .push_back (player);
-    by_sons[sons[player]].push_back (player);
+    by_sons[sons.at (player)].push_back (player);
   }
 
   auto const print_players
@@ -191,7 +193,7 @@ try
                   << player
                   << " (" << points.at (player)
                   << "/" << games.at (player)
-                  << ", " << sons[player]
+                  << ", " << sons.at (player)
                   << ", " << ratio (points.at (player), games.at (player))
                   << ")";
 
