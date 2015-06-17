@@ -1,5 +1,6 @@
 // mirko.rahn@web.de
 
+#include <cstddef>
 #include <htmlcxx/html/ParserDom.h>
 
 #include <functional>
