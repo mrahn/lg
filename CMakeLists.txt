@@ -27,5 +27,5 @@ add_definitions ("-O3")
 
 add_executable (tournament tournament.cpp)
 target_link_libraries (tournament
-  "${HTMLCXX_LIBRARY_DIR}/libhtmlcxx.so"
+  "${HTMLCXX_LIBRARY}"
 )
